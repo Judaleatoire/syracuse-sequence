@@ -1,0 +1,9 @@
+set terminal jpeg size 1600,900
+set output 'valeurs.jpeg'
+set title 'Ensemble des Un=f(n) pour U0 dans ['.ARG1.'-'.ARG2.']'
+set xlabel "n"
+set ylabel "Un"
+set multiplot 
+FILES = system("ls -1 data/tmp/f*.dat")
+plot for [var in FILES] var with lines lt rgb "#0074FF" notitle
+unset multiplot

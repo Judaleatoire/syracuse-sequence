@@ -1,0 +1,6 @@
+set terminal jpeg size 1600,900
+set output 'altimax.jpeg'
+set title 'Altitude maximum atteinte en fonction de U0'
+set xlabel "U0"
+set ylabel "altimax"
+plot 'data/tmp/altimax.dat' with lines lt rgb "#0074FF" title "altimax.dat"

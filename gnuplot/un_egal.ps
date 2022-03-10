@@ -1,0 +1,6 @@
+set terminal jpeg size 1600,900
+set output 'valeurs.jpeg'
+set title 'Ensemble des Un=f(n) pour U0 dans ['.ARG1.']'
+set xlabel "n"
+set ylabel "Un"
+plot 'data/tmp/f'.ARG1.'_un.dat' with lines lt rgb "#0074FF" notitle

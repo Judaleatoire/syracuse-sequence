@@ -1,0 +1,6 @@
+set terminal jpeg size 1600,900
+set output 'dureevol.jpeg'
+set title 'Durée de vol en fonction de U0'
+set xlabel "U0"
+set ylabel "Nombre d'occurrences"
+plot 'data/tmp/dureevol.dat' with points lt rgb "#0074FF" title "dureevol.dat"
